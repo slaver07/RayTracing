@@ -50,6 +50,27 @@ struct SIntersection
     int MaterialType;
 };
 
+struct SLight
+{
+    vec3 Position;
+};
+
+struct SMaterial
+{
+    vec3 Color;
+    vec4 LightCoeffs;
+    float ReflectionCoef;
+    float RefractionCoef;
+    int MaterialType;
+};
+
+struct STracingRay
+{
+    SRay ray;
+    float contribution;
+    int depth;
+};
+
 /*** SHADER INPUT/OUTPUT ***/
 in vec3 glPosition;
 out vec4 FragColor;
@@ -57,6 +78,11 @@ out vec4 FragColor;
 /*** SCENE DATA ***/
 STriangle triangles[10];
 SSphere spheres[2];
+
+SLight uLight;
+SMaterial materials[6];
+STracingRay rayStack[10];
+int stackSize = 0;
 
 /*** FUNCTIONS ***/
 SRay GenerateRay(SCamera uCamera)
@@ -192,6 +218,23 @@ bool Raytrace(SRay ray, SSphere spheres[2], STriangle triangles[10], float start
     return result;
 }
 
+void pushRay(STracingRay ray)
+{
+    rayStack[stackSize] = ray;
+    stackSize++;
+}
+
+STracingRay popRay()
+{
+    stackSize--;
+    return rayStack[stackSize];
+}
+
+bool isEmpty()
+{
+    return stackSize <= 0;
+}
+
 void initializeDefaultScene(out STriangle triangles[10], out SSphere spheres[2])
 {
     /* TRIANGLES */
@@ -226,6 +269,25 @@ void initializeDefaultScene(out STriangle triangles[10], out SSphere spheres[2])
     spheres[1].Radius = 1.0;
     spheres[1].MaterialIdx = 0;
 }
+
+void initializeDefaultLightMaterials(out SLight light, out SMaterial materials[6])
+{
+    light.Position = vec3(0.0, 2.0, -4.0f);
+    
+    vec4 lightCoefs = vec4(0.4, 0.9, 0.0, 512.0);
+    materials[0].Color = vec3(0.0, 1.0, 0.0);
+    materials[0].LightCoeffs = lightCoefs;
+    materials[0].ReflectionCoef = 0.5;
+    materials[0].RefractionCoef = 1.0;
+    materials[0].MaterialType = DIFFUSE;
+    
+    materials[1].Color = vec3(0.0, 0.0, 1.0);
+    materials[1].LightCoeffs = lightCoefs;
+    materials[1].ReflectionCoef = 0.5;
+    materials[1].RefractionCoef = 1.0;
+    materials[1].MaterialType = DIFFUSE;
+}
+
 
 void main()
 {
