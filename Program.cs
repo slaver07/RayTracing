@@ -10,7 +10,7 @@ namespace RayTracing
     {
         static void Main(string[] args)
         {
-            using (View view = new View(800, 800))
+            using (View view = new View(1200, 1200))
             {
                 view.Run();
             }

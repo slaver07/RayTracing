@@ -1,7 +1,7 @@
 {
   "version": 3,
   "targets": {
-    "net5.0": {
+    "net8.0": {
       "OpenTK/4.8.2": {
         "type": "package",
         "dependencies": {
@@ -23,28 +23,40 @@
           "OpenTK.Mathematics": "[4.8.2, 4.9.0)"
         },
         "compile": {
-          "lib/netcoreapp3.1/OpenTK.Audio.OpenAL.dll": {}
+          "lib/netcoreapp3.1/OpenTK.Audio.OpenAL.dll": {
+            "related": ".pdb;.xml"
+          }
         },
         "runtime": {
-          "lib/netcoreapp3.1/OpenTK.Audio.OpenAL.dll": {}
+          "lib/netcoreapp3.1/OpenTK.Audio.OpenAL.dll": {
+            "related": ".pdb;.xml"
+          }
         }
       },
       "OpenTK.Compute/4.8.2": {
         "type": "package",
         "compile": {
-          "lib/netcoreapp3.1/OpenTK.Compute.dll": {}
+          "lib/netcoreapp3.1/OpenTK.Compute.dll": {
+            "related": ".pdb;.xml"
+          }
         },
         "runtime": {
-          "lib/netcoreapp3.1/OpenTK.Compute.dll": {}
+          "lib/netcoreapp3.1/OpenTK.Compute.dll": {
+            "related": ".pdb;.xml"
+          }
         }
       },
       "OpenTK.Core/4.8.2": {
         "type": "package",
         "compile": {
-          "lib/netstandard2.1/OpenTK.Core.dll": {}
+          "lib/netstandard2.1/OpenTK.Core.dll": {
+            "related": ".pdb;.xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.1/OpenTK.Core.dll": {}
+          "lib/netstandard2.1/OpenTK.Core.dll": {
+            "related": ".pdb;.xml"
+          }
         }
       },
       "OpenTK.Graphics/4.8.2": {
@@ -54,19 +66,27 @@
           "OpenTK.Mathematics": "[4.8.2, 4.9.0)"
         },
         "compile": {
-          "lib/netcoreapp3.1/OpenTK.Graphics.dll": {}
+          "lib/netcoreapp3.1/OpenTK.Graphics.dll": {
+            "related": ".pdb;.xml"
+          }
         },
         "runtime": {
-          "lib/netcoreapp3.1/OpenTK.Graphics.dll": {}
+          "lib/netcoreapp3.1/OpenTK.Graphics.dll": {
+            "related": ".pdb;.xml"
+          }
         }
       },
       "OpenTK.Input/4.8.2": {
         "type": "package",
         "compile": {
-          "lib/netstandard2.0/OpenTK.Input.dll": {}
+          "lib/netstandard2.0/OpenTK.Input.dll": {
+            "related": ".pdb;.xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/OpenTK.Input.dll": {}
+          "lib/netstandard2.0/OpenTK.Input.dll": {
+            "related": ".pdb;.xml"
+          }
         }
       },
       "OpenTK.Mathematics/4.8.2": {
@@ -75,10 +95,14 @@
           "System.Runtime.CompilerServices.Unsafe": "5.0.0"
         },
         "compile": {
-          "lib/netcoreapp3.1/OpenTK.Mathematics.dll": {}
+          "lib/netcoreapp3.1/OpenTK.Mathematics.dll": {
+            "related": ".pdb;.xml"
+          }
         },
         "runtime": {
-          "lib/netcoreapp3.1/OpenTK.Mathematics.dll": {}
+          "lib/netcoreapp3.1/OpenTK.Mathematics.dll": {
+            "related": ".pdb;.xml"
+          }
         }
       },
       "OpenTK.redist.glfw/3.3.8.39": {
@@ -123,10 +147,14 @@
           "OpenTK.Mathematics": "[4.8.2, 4.9.0)"
         },
         "compile": {
-          "lib/netcoreapp3.1/OpenTK.Windowing.Common.dll": {}
+          "lib/netcoreapp3.1/OpenTK.Windowing.Common.dll": {
+            "related": ".pdb;.xml"
+          }
         },
         "runtime": {
-          "lib/netcoreapp3.1/OpenTK.Windowing.Common.dll": {}
+          "lib/netcoreapp3.1/OpenTK.Windowing.Common.dll": {
+            "related": ".pdb;.xml"
+          }
         }
       },
       "OpenTK.Windowing.Desktop/4.8.2": {
@@ -138,10 +166,14 @@
           "OpenTK.Windowing.GraphicsLibraryFramework": "[4.8.2, 4.9.0)"
         },
         "compile": {
-          "lib/netcoreapp3.1/OpenTK.Windowing.Desktop.dll": {}
+          "lib/netcoreapp3.1/OpenTK.Windowing.Desktop.dll": {
+            "related": ".pdb;.xml"
+          }
         },
         "runtime": {
-          "lib/netcoreapp3.1/OpenTK.Windowing.Desktop.dll": {}
+          "lib/netcoreapp3.1/OpenTK.Windowing.Desktop.dll": {
+            "related": ".pdb;.xml"
+          }
         }
       },
       "OpenTK.Windowing.GraphicsLibraryFramework/4.8.2": {
@@ -151,19 +183,27 @@
           "OpenTK.redist.glfw": "3.3.8.39"
         },
         "compile": {
-          "lib/netcoreapp3.1/OpenTK.Windowing.GraphicsLibraryFramework.dll": {}
+          "lib/netcoreapp3.1/OpenTK.Windowing.GraphicsLibraryFramework.dll": {
+            "related": ".pdb;.xml"
+          }
         },
         "runtime": {
-          "lib/netcoreapp3.1/OpenTK.Windowing.GraphicsLibraryFramework.dll": {}
+          "lib/netcoreapp3.1/OpenTK.Windowing.GraphicsLibraryFramework.dll": {
+            "related": ".pdb;.xml"
+          }
         }
       },
       "System.Runtime.CompilerServices.Unsafe/5.0.0": {
         "type": "package",
         "compile": {
-          "ref/netstandard2.1/System.Runtime.CompilerServices.Unsafe.dll": {}
+          "ref/netstandard2.1/System.Runtime.CompilerServices.Unsafe.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+          "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.dll": {
+            "related": ".xml"
+          }
         }
       }
     }
@@ -369,41 +409,42 @@
     }
   },
   "projectFileDependencyGroups": {
-    "net5.0": [
+    "net8.0": [
       "OpenTK >= 4.8.2"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\black\\.nuget\\packages\\": {},
+    "C:\\Users\\Redmi\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\black\\source\\repos\\RayTracing\\RayTracing.csproj",
+      "projectUniqueName": "D:\\My repositories\\RayTracing\\RayTracing.csproj",
       "projectName": "RayTracing",
-      "projectPath": "C:\\Users\\black\\source\\repos\\RayTracing\\RayTracing.csproj",
-      "packagesPath": "C:\\Users\\black\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\black\\source\\repos\\RayTracing\\obj\\",
+      "projectPath": "D:\\My repositories\\RayTracing\\RayTracing.csproj",
+      "packagesPath": "C:\\Users\\Redmi\\.nuget\\packages\\",
+      "outputPath": "D:\\My repositories\\RayTracing\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\black\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Redmi\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
-        "net5.0"
+        "net8.0"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net5.0": {
-          "targetAlias": "net5.0",
+        "net8.0": {
+          "targetAlias": "net8.0",
           "projectReferences": {}
         }
       },
@@ -411,11 +452,17 @@
         "warnAsError": [
           "NU1605"
         ]
-      }
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      },
+      "SdkAnalysisLevel": "9.0.200"
     },
     "frameworks": {
-      "net5.0": {
-        "targetAlias": "net5.0",
+      "net8.0": {
+        "targetAlias": "net8.0",
         "dependencies": {
           "OpenTK": {
             "target": "Package",
@@ -428,7 +475,8 @@
           "net47",
           "net471",
           "net472",
-          "net48"
+          "net48",
+          "net481"
         ],
         "assetTargetFallback": true,
         "warn": true,
@@ -437,7 +485,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.416\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
