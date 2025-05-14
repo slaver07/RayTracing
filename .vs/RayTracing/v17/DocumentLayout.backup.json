@@ -11,12 +11,12 @@
       "RelativeMoniker": "D:0:0:{CBAC765D-5321-4FEE-9081-C95E223EA3EE}|RayTracing.csproj|solutionrelative:shaders\\shader.vert||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CBAC765D-5321-4FEE-9081-C95E223EA3EE}|RayTracing.csproj|d:\\my repositories\\raytracing\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CBAC765D-5321-4FEE-9081-C95E223EA3EE}|RayTracing.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{CBAC765D-5321-4FEE-9081-C95E223EA3EE}|RayTracing.csproj|d:\\my repositories\\raytracing\\view.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CBAC765D-5321-4FEE-9081-C95E223EA3EE}|RayTracing.csproj|solutionrelative:view.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBAC765D-5321-4FEE-9081-C95E223EA3EE}|RayTracing.csproj|d:\\my repositories\\raytracing\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CBAC765D-5321-4FEE-9081-C95E223EA3EE}|RayTracing.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CBAC765D-5321-4FEE-9081-C95E223EA3EE}|RayTracing.csproj|d:\\my repositories\\raytracing\\raytracing.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
@@ -34,7 +34,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\My repositories\\RayTracing\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -53,7 +53,7 @@
               "RelativeDocumentMoniker": "Shaders\\shader.vert",
               "ToolTip": "D:\\My repositories\\RayTracing\\Shaders\\shader.vert",
               "RelativeToolTip": "Shaders\\shader.vert",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2025-05-10T22:04:44.664Z",
               "EditorCaption": ""
@@ -64,9 +64,9 @@
               "Title": "shader.frag",
               "DocumentMoniker": "D:\\My repositories\\RayTracing\\Shaders\\shader.frag",
               "RelativeDocumentMoniker": "Shaders\\shader.frag",
-              "ToolTip": "D:\\My repositories\\RayTracing\\Shaders\\shader.frag",
-              "RelativeToolTip": "Shaders\\shader.frag",
-              "ViewState": "AgIAAOwBAAAAAAAAAADwv/QBAAAyAAAAAAAAAA==",
+              "ToolTip": "D:\\My repositories\\RayTracing\\Shaders\\shader.frag*",
+              "RelativeToolTip": "Shaders\\shader.frag*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2025-05-09T10:23:03.566Z",
               "EditorCaption": ""
@@ -85,13 +85,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "View.cs",
               "DocumentMoniker": "D:\\My repositories\\RayTracing\\View.cs",
               "RelativeDocumentMoniker": "View.cs",
               "ToolTip": "D:\\My repositories\\RayTracing\\View.cs",
               "RelativeToolTip": "View.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsBAAAeAAAAAAAAAA==",
+              "ViewState": "AgIAAE4AAAAAAAAAAAAgwGYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-09T10:21:56.665Z",
               "EditorCaption": ""
